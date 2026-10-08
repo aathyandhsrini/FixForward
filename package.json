@@ -1,0 +1,28 @@
+{
+  "name": "fixforward",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "node scripts/dev.js",
+    "client": "vite",
+    "server": "node --watch server/index.js",
+    "build": "vite build",
+    "test": "node --test server/*.test.js",
+    "start": "node server/index.js",
+    "model:pull": "node scripts/pull-model.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "multer": "^2.0.2",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.4",
+    "vite": "^7.1.9"
+  }
+}
